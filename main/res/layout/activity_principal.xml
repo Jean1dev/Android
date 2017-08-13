@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jean.sinca_2.PrincipalActivity">
+
+    <TextView
+        android:id="@+id/logadoComo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/excluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_orange_dark"
+            android:shape="oval"
+            android:text="Excluir"
+            tools:layout_editor_absoluteX="289dp"
+            tools:layout_editor_absoluteY="445dp" />
+
+        <Button
+            android:id="@+id/novo_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/holo_orange_dark"
+            android:shape="oval"
+            android:text="+"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/listar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/excluir"
+            android:layout_alignParentEnd="true"
+            android:text="Listar" />
+
+        <Button
+            android:id="@+id/exporta_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/novo_produto"
+            android:layout_alignParentStart="true"
+            android:text="sync" />
+
+        <TextView
+            android:id="@+id/conexao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="89dp"
+            android:text="Status da conexão: verificando..."
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/listar" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

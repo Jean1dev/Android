@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jean.sinca_2.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="senha"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/sair"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.50"
+            android:background="@android:color/holo_orange_dark"
+            android:backgroundTint="?android:attr/colorPressedHighlight"
+            android:text="Sair"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="241dp"
+            tools:layout_editor_absoluteY="234dp" />
+
+        <Button
+            android:id="@+id/cadastrar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:backgroundTint="?android:attr/colorPressedHighlight"
+            android:text="Cadastrar"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="225dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/sobre"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:backgroundTint="?android:attr/colorPressedHighlight"
+            android:text="Sobre"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="110dp"
+            tools:layout_editor_absoluteY="148dp" />
+
+        <Button
+            android:id="@+id/entrar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_orange_dark"
+            android:backgroundTint="?android:attr/colorPressedHighlight"
+            android:text="Entrar"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="220dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="É ISSO AI"
+        android:textAlignment="center" />
+
+</LinearLayout>
